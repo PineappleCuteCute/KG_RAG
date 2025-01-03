@@ -24,8 +24,6 @@
 
 [BiomixQA: Bộ dữ liệu benchmark](https://github.com/BaranziniLab/KG_RAG/tree/main?tab=readme-ov-file#biomixqa-benchmark-dataset)  
 
-[Trích dẫn](https://github.com/BaranziniLab/KG_RAG/blob/main/README.md#citation)  
-
 ## KG-RAG là gì?
 
 KG-RAG là viết tắt của **Knowledge Graph-based Retrieval Augmented Generation** (Tạo lập tăng cường dựa trên Đồ thị Tri thức).
@@ -194,15 +192,4 @@ mcq_data = load_dataset("kg-rag/BiomixQA", "mcq")
 
 # Đối với dữ liệu Đúng/Sai
 tf_data = load_dataset("kg-rag/BiomixQA", "true_false")
-```
-
-## Trích dẫn
-
-```
-@article{soman2023biomedical,
-  title={Biomedical knowledge graph-enhanced prompt generation for large language models},
-  author={Soman, Karthik and Rose, Peter W and Morris, John H and Akbas, Rabia E and Smith, Brett and Peetoom, Braian and Villouta-Reyes, Catalina and Cerono, Gabriel and Shi, Yongmei and Rizk-Jackson, Angela and others},
-  journal={arXiv preprint arXiv:2311.17330},
-  year={2023}
-}
 ```
