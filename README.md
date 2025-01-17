@@ -75,9 +75,9 @@ pip install -r requirements.txt
 
 ### Bước 4: Cập nhật config.yaml 
 
-[config.yaml](https://github.com/BaranziniLab/KG_RAG/blob/main/config.yaml) chứa tất cả thông tin cần thiết để chạy các script trên máy của bạn. Hãy đảm bảo điền đầy đủ thông tin vào tệp [yaml này](https://github.com/BaranziniLab/KG_RAG/blob/main/config.yaml).
+[config.yaml](https://github.com/PineappleCuteCute/KG_RAG/blob/main/config.yaml) chứa tất cả thông tin cần thiết để chạy các script trên máy của bạn. Hãy đảm bảo điền đầy đủ thông tin vào tệp [yaml này](https://github.com/PineappleCuteCute/KG_RAG/blob/main/config.yaml).
 
-Lưu ý: Có một tệp yaml khác có tên [system_prompts.yaml](https://github.com/BaranziniLab/KG_RAG/blob/main/system_prompts.yaml). Tệp này đã được điền sẵn và chứa tất cả các gợi ý hệ thống được sử dụng trong framework KG-RAG.
+Lưu ý: Có một tệp yaml khác có tên [system_prompts.yaml](https://github.com/PineappleCuteCute/KG_RAG/blob/main/system_prompts.yaml). Tệp này đã được điền sẵn và chứa tất cả các gợi ý hệ thống được sử dụng trong framework KG-RAG.
 
 ### Bước 5: Chạy script setup
 Lưu ý: Đảm bảo bạn đang ở trong thư mục KG_RAG
