@@ -37,14 +37,14 @@ Do đó, framework này trao quyền cho một LLM đa năng bằng cách kết 
 
 ### KHÔNG SỬ DỤNG KG-RAG
 
-*Lưu ý: Ví dụ này được chạy bằng KG-RAG v0.3.0. Chúng tôi đang gợi ý GPT từ terminal, KHÔNG phải từ trình duyệt chatGPT. Tham số nhiệt độ được đặt thành 0 cho tất cả các phân tích. Tham khảo tệp [yaml này](https://github.com/BaranziniLab/KG_RAG/blob/main/config.yaml) để thiết lập tham số.*
+*Lưu ý: Chạy trên AWS p3.8xlarge EC2 instance và sử dụng KG-RAG v0.3.0. Tham số nhiệt độ được đặt thành 0 cho tất cả các phân tích. Tham khảo tệp [yaml này](https://github.com/PineappleCuteCute/KG_RAG/blob/main/config.yaml) để thiết lập tham số.*
 
 <video src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/dbabb812-2a8a-48b6-9785-55b983cb61a4" controls="controls" style="max-width: 730px;">
 </video>
 
 ### SỬ DỤNG KG-RAG
 
-*Lưu ý: Ví dụ này được chạy bằng KG-RAG v0.3.0. Tham số nhiệt độ được đặt thành 0 cho tất cả các phân tích. Tham khảo tệp [yaml này](https://github.com/BaranziniLab/KG_RAG/blob/main/config.yaml) để thiết lập tham số.*
+*Lưu ý: Chạy trên AWS p3.8xlarge EC2 instance và sử dụng KG-RAG v0.3.0. Tham số nhiệt độ được đặt thành 0 cho tất cả các phân tích. Tham khảo tệp [yaml này](https://github.com/PineappleCuteCute/KG_RAG/blob/main/config.yaml) để thiết lập tham số.*
 
 <video src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/acd08954-a496-4a61-a3b1-8fc4e647b2aa" controls="controls" style="max-width: 730px;">
 </video>
@@ -107,9 +107,7 @@ python -m kg_rag.rag_based_generation.GPT.text_generation -g <mô hình GPT yêu
 python -m kg_rag.rag_based_generation.GPT.text_generation -g <mô hình GPT yêu thích của bạn - "gpt-4" hoặc "gpt-3.5-turbo">
 ```
 
-Ví dụ:
-
-Lưu ý: Ví dụ sau được chạy trên AWS p3.8xlarge EC2 instance và sử dụng KG-RAG v0.3.0.
+Chạy trên AWS p3.8xlarge EC2 instance và sử dụng KG-RAG v0.3.0.
 
 <video src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/defcbff7-e777-4db6-b028-10f54c76b234" controls="controls" style="max-width: 730px;">
 </video>
@@ -132,9 +130,7 @@ Lưu ý: Nếu bạn chưa tải xuống Llama trong bước setup, thì khi b�
 python -m kg_rag.rag_based_generation.Llama.text_generation -m <phương pháp-1 hoặc phương pháp-2, nếu không đề cập gì thì mặc định là 'phương pháp-1'>
 ```
 
-Ví dụ:
-
-Lưu ý: Ví dụ sau được chạy trên AWS p3.8xlarge EC2 instance và sử dụng KG-RAG v0.3.0.
+Chạy trên AWS p3.8xlarge EC2 instance và sử dụng KG-RAG v0.3.0.
 
 <video src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/94bda923-dafb-451a-943a-1d7c65f3ffd4" controls="controls" style="max-width: 730px;">
 </video>
