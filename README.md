@@ -9,11 +9,13 @@ KG-RAG là viết tắt của **Knowledge Graph-based Retrieval Augmented Genera
 ### Bắt đầu bằng cách xem kiến trúc hệ thống KG-RAG
 
 <p align="center">
-  <img src="kg-rag.drawio.png" width="450">
+  <img src="kg-rag.drawio.png" width="800">
 </p>
 
+### Luồng hoạt động chính kiến trúc hệ thống KG-RAG
+
 <p align="center">
-  <img src="faker.drawio.png" width="450">
+  <img src="faker.drawio.png" width="8000">
 </p>
 
 Đây là một framework không phụ thuộc vào nhiệm vụ, kết hợp tri thức rõ ràng từ Đồ thị Tri thức (KG) với tri thức ngầm từ Mô hình Ngôn ngữ Lớn (LLM). Bạn có thể xem bản in trước trên [arXiv](https://arxiv.org/abs/2311.17330) của công trình này.
