@@ -2,28 +2,6 @@
   <img src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/0b2f5b42-761e-4d5b-8d6f-77c8b965f017" width="450">
 </p>
 
-## Mục lục
-[KG-RAG là gì](https://github.com/PineappleCuteCute/KG_RAG#what-is-kg-rag)  
-[Ví dụ về cách sử dụng KG-RAG](https://github.com/BaranziniLab/KG_RAG#example-use-case-of-kg-rag)  
- - [Gợi ý GPT mà không sử dụng KG-RAG](https://github.com/BaranziniLab/KG_RAG#without-kg-rag)  
- - [Gợi ý GPT với KG-RAG](https://github.com/BaranziniLab/KG_RAG#with-kg-rag)  
- - [Ví dụ notebook sử dụng KG-RAG với GPT](https://github.com/BaranziniLab/KG_RAG/blob/main/notebooks/kg_rag_based_gpt_prompts.ipynb)  
-
-[Cách chạy KG-RAG](https://github.com/BaranziniLab/KG_RAG#how-to-run-kg-rag)  
- - [Bước 1: Clone repository](https://github.com/BaranziniLab/KG_RAG#step-1-clone-the-repo)  
- - [Bước 2: Tạo môi trường ảo](https://github.com/BaranziniLab/KG_RAG#step-2-create-a-virtual-environment)  
- - [Bước 3: Cài đặt các phụ thuộc](https://github.com/BaranziniLab/KG_RAG#step-3-install-dependencies)  
- - [Bước 4: Cập nhật config.yaml](https://github.com/BaranziniLab/KG_RAG#step-4-update-configyaml)  
- - [Bước 5: Chạy script setup](https://github.com/BaranziniLab/KG_RAG#step-5-run-the-setup-script)  
- - [Bước 6: Chạy KG-RAG từ terminal](https://github.com/BaranziniLab/KG_RAG#step-6-run-kg-rag-from-your-terminal)  
-    - [Sử dụng GPT](https://github.com/BaranziniLab/KG_RAG#using-gpt)  
-    - [Sử dụng chế độ tương tác với GPT](https://github.com/BaranziniLab/KG_RAG/blob/main/README.md#using-gpt-interactive-mode)  
-    - [Sử dụng Llama](https://github.com/BaranziniLab/KG_RAG#using-llama)  
-    - [Sử dụng chế độ tương tác với Llama](https://github.com/BaranziniLab/KG_RAG/blob/main/README.md#using-llama-interactive-mode)  
-  - [Các đối số dòng lệnh cho KG-RAG](https://github.com/BaranziniLab/KG_RAG?tab=readme-ov-file#command-line-arguments-for-kg-rag)  
-
-[BiomixQA: Bộ dữ liệu benchmark](https://github.com/BaranziniLab/KG_RAG/tree/main?tab=readme-ov-file#biomixqa-benchmark-dataset)  
-
 ## KG-RAG là gì?
 
 KG-RAG là viết tắt của **Knowledge Graph-based Retrieval Augmented Generation** (Tạo lập tăng cường dựa trên Đồ thị Tri thức).
