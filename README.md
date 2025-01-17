@@ -126,7 +126,7 @@ python -m kg_rag.rag_based_generation.GPT.text_generation -i True -g <mô hình 
 ```
 
 #### Sử dụng Llama
-Lưu ý: Nếu bạn chưa tải xuống Llama trong bước [setup](https://github.com/BaranziniLab/KG_RAG#step-5-run-the-setup-script), thì khi bạn chạy lệnh sau, có thể mất một chút thời gian vì nó sẽ tải xuống mô hình trước.
+Lưu ý: Nếu bạn chưa tải xuống Llama trong bước setup, thì khi bạn chạy lệnh sau, có thể mất một chút thời gian vì nó sẽ tải xuống mô hình trước.
 
 ```
 python -m kg_rag.rag_based_generation.Llama.text_generation -m <phương pháp-1 hoặc phương pháp-2, nếu không đề cập gì thì mặc định là 'phương pháp-1'>
