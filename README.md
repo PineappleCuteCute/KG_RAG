@@ -18,9 +18,9 @@ KG-RAG là viết tắt của **Knowledge Graph-based Retrieval Augmented Genera
   <img src="faker.drawio.png" width="8000">
 </p>
 
-Đây là một framework không phụ thuộc vào nhiệm vụ, kết hợp tri thức rõ ràng từ Đồ thị Tri thức (KG) với tri thức ngầm từ Mô hình Ngôn ngữ Lớn (LLM). Bạn có thể xem bản in trước trên [arXiv](https://arxiv.org/abs/2311.17330) của công trình này.
+Đây là một framework không phụ thuộc vào nhiệm vụ, kết hợp tri thức rõ ràng từ Đồ thị Tri thức (KG) với tri thức ngầm từ Mô hình Ngôn ngữ Lớn (LLM).
 
-Ở đây, chúng tôi sử dụng một Đồ thị Tri thức y sinh khổng lồ có tên là [SPOKE](https://spoke.ucsf.edu/) để cung cấp ngữ cảnh y sinh. SPOKE đã tích hợp hơn 40 kho lưu trữ tri thức y sinh từ các lĩnh vực khác nhau, tập trung vào các khái niệm y sinh như gen, protein, thuốc, hợp chất, bệnh tật và các kết nối đã được thiết lập. SPOKE bao gồm hơn 27 triệu nút thuộc 21 loại khác nhau và 53 triệu cạnh thuộc 55 loại [[Tham khảo](https://doi.org/10.1093/bioinformatics/btad080)].
+Ở đây, tôi sử dụng một Đồ thị Tri thức y sinh khổng lồ có tên là [SPOKE](https://spoke.ucsf.edu/) để cung cấp ngữ cảnh y sinh. SPOKE đã tích hợp hơn 40 kho lưu trữ tri thức y sinh từ các lĩnh vực khác nhau, tập trung vào các khái niệm y sinh như gen, protein, thuốc, hợp chất, bệnh tật và các kết nối đã được thiết lập. SPOKE bao gồm hơn 27 triệu nút thuộc 21 loại khác nhau và 53 triệu cạnh thuộc 55 loại [[Tham khảo](https://doi.org/10.1093/bioinformatics/btad080)].
 
 Đặc điểm chính của KG-RAG là nó trích xuất "ngữ cảnh nhận biết gợi ý" từ SPOKE KG, được định nghĩa là:
 
