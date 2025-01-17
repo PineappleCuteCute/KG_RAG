@@ -6,10 +6,15 @@
 
 KG-RAG là viết tắt của **Knowledge Graph-based Retrieval Augmented Generation** (Tạo lập tăng cường dựa trên Đồ thị Tri thức).
 
-### Bắt đầu bằng cách xem video về KG-RAG
+### Bắt đầu bằng cách xem kiến trúc hệ thống KG-RAG
 
-<video src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/86e5b8a3-eb58-4648-95a4-271e9c69b4ed" controls="controls" style="max-width: 730px;">
-</video>
+<p align="center">
+  <img src="kg-rag.drawio.png" width="450">
+</p>
+
+<p align="center">
+  <img src="faker.drawio.png" width="450">
+</p>
 
 Đây là một framework không phụ thuộc vào nhiệm vụ, kết hợp tri thức rõ ràng từ Đồ thị Tri thức (KG) với tri thức ngầm từ Mô hình Ngôn ngữ Lớn (LLM). Bạn có thể xem bản in trước trên [arXiv](https://arxiv.org/abs/2311.17330) của công trình này.
 
