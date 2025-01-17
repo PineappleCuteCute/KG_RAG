@@ -31,7 +31,7 @@ Do đó, framework này trao quyền cho một LLM đa năng bằng cách kết 
 ## Ví dụ về cách sử dụng KG-RAG
 Đoạn mã sau đây hiển thị tin tức từ trang web của FDA [website](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-treatment-weight-management-patients-bardet-biedl-syndrome-aged-6-or-older) về loại thuốc **"setmelanotide"** được FDA phê duyệt để quản lý cân nặng ở bệnh nhân mắc *Hội chứng Bardet-Biedl*.
 
-<img src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/fc4d0b8d-0edb-461d-86c5-9d0d191bd97d" width="600" height="350">
+<img src="FDA.png" width="600" height="350">
 
 ### Hỏi GPT-4 về loại thuốc trên:
 
