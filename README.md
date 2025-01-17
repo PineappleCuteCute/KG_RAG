@@ -17,7 +17,7 @@ KG-RAG là viết tắt của **Knowledge Graph-based Retrieval Augmented Genera
 ### Luồng hoạt động chính kiến trúc hệ thống KG-RAG
 
 <p align="center">
-  <img src="img/flow.png" width="8000">
+  <img src="img/flow.png" width="800">
 </p>
 
 Ở đây, tôi sử dụng một Đồ thị Tri thức y sinh khổng lồ có tên là [SPOKE](https://spoke.ucsf.edu/) để cung cấp ngữ cảnh y sinh. SPOKE đã tích hợp hơn 40 kho lưu trữ tri thức y sinh từ các lĩnh vực khác nhau, tập trung vào các khái niệm y sinh như gen, protein, thuốc, hợp chất, bệnh tật và các kết nối đã được thiết lập. SPOKE bao gồm hơn 27 triệu nút thuộc 21 loại khác nhau và 53 triệu cạnh thuộc 55 loại [[Tham khảo](https://doi.org/10.1093/bioinformatics/btad080)].
@@ -31,7 +31,7 @@ Do đó, framework này trao quyền cho một LLM đa năng bằng cách kết 
 ## Ví dụ về cách sử dụng KG-RAG
 Đoạn mã sau đây hiển thị tin tức từ trang web của FDA [website](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-treatment-weight-management-patients-bardet-biedl-syndrome-aged-6-or-older) về loại thuốc **"setmelanotide"** được FDA phê duyệt để quản lý cân nặng ở bệnh nhân mắc *Hội chứng Bardet-Biedl*.
 
-<img src="img/FDA.png" width="600" height="350">
+<img src="img/FDA.png" width="800" height="500">
 
 ### Hỏi GPT-4 về loại thuốc trên:
 
