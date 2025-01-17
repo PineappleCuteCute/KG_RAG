@@ -13,7 +13,7 @@ SENTENCE_EMBEDDING_MODEL = config_data["VECTOR_DB_SENTENCE_EMBEDDING_MODEL"]
 def load_data():
     with open(DATA_PATH, "rb") as f:
         data = pickle.load(f)
-    metadata_list = list(map(lambda x:{"source": x + " from SPOKE knowledge graph"}, data))
+    metadata_list = list(map(lambda x:{"source": x + " từ SPOKE knowledge graph"}, data))
     return data, metadata_list
 
 def create_vectordb():
@@ -27,9 +27,8 @@ def create_vectordb():
     for batch in batches:
         vectorstore.add_documents(documents=batch)
     end_time = round((time.time() - start_time)/(60), 2)
-    print("VectorDB is created in {} mins".format(end_time))
+    print("VectorDB đã được tạo trong {} phút".format(end_time))
 
 
 if __name__ == "__main__":
     create_vectordb()
-    

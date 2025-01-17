@@ -4,39 +4,35 @@ import sys
 VECTOR_DB_PATH = config_data["VECTOR_DB_PATH"]
 SENTENCE_EMBEDDING_MODEL_FOR_NODE_RETRIEVAL = config_data["SENTENCE_EMBEDDING_MODEL_FOR_NODE_RETRIEVAL"]
 
-print("Testing vectorDB loading ...")
+print("Đang kiểm tra việc tải vectorDB ...")
 print("")
 try:
     vectorstore = load_chroma(VECTOR_DB_PATH, SENTENCE_EMBEDDING_MODEL_FOR_NODE_RETRIEVAL)
-    print("vectorDB is loaded succesfully!")
+    print("vectorDB đã được tải thành công!")
 except:
-    print("vectorDB is not loaded. Check the path given in 'VECTOR_DB_PATH' of config.yaml")
+    print("vectorDB không được tải. Kiểm tra đường dẫn được cung cấp trong 'VECTOR_DB_PATH' của config.yaml")
     print("")
     sys.exit(1)
 try:
     print("")
-    print("Testing entity extraction ...")
+    print("Đang kiểm tra việc trích xuất thực thể ...")
     print("")
     entity = "psoriasis"
-    print("Inputting '{}' as the entity to test ...".format(entity))    
+    print("Đang nhập '{}' làm thực thể để kiểm tra ...".format(entity))    
     print("")
     node_search_result = vectorstore.similarity_search_with_score(entity, k=1)
     extracted_entity = node_search_result[0][0].page_content
-    print("Extracted entity is '{}'".format(extracted_entity))
+    print("Thực thể được trích xuất là '{}'".format(extracted_entity))
     print("")
     if extracted_entity == "psoriasis":                
-        print("Entity extraction is successful!")
+        print("Việc trích xuất thực thể thành công!")
         print("")
-        print("vectorDB is correctly populated and is good to go!")
+        print("vectorDB đã được điền đúng cách và sẵn sàng để sử dụng!")
     else:
-        print("Entity extraction is not successful. Make sure vectorDB is populated correctly. Refer 'How to run KG-RAG' Step 5")
+        print("Việc trích xuất thực thể không thành công. Đảm bảo rằng vectorDB đã được điền đúng cách. Tham khảo 'Cách chạy KG-RAG' Bước 5")
         print("")
         sys.exit(1)
 except:
-    print("Entity extraction is not successful. Make sure vectorDB is populated correctly. Refer 'How to run KG-RAG' Step 5")
+    print("Việc trích xuất thực thể không thành công. Đảm bảo rằng vectorDB đã được điền đúng cách. Tham khảo 'Cách chạy KG-RAG' Bước 5")
     print("")
     sys.exit(1)
-
-    
-    
-    

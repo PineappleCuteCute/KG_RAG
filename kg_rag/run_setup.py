@@ -5,69 +5,65 @@ def download_llama(method):
     from kg_rag.utility import llama_model
     try:
         llama_model(config_data["LLAMA_MODEL_NAME"], config_data["LLAMA_MODEL_BRANCH"], config_data["LLM_CACHE_DIR"], method=method)
-        print("Model is successfully downloaded to the provided cache directory!")
+        print("Model đã được tải xuống thành công vào thư mục cache được cung cấp!")
     except:
-        print("Model is not downloaded! Make sure the above mentioned conditions are satisfied")
+        print("Model không được tải xuống! Hãy đảm bảo rằng các điều kiện được đề cập ở trên đã được đáp ứng.")
         
 
 print("")
-print("Starting to set up KG-RAG ...")
+print("Bắt đầu thiết lập KG-RAG ...")
 print("")
 
-user_input = input("Did you update the config.yaml file with all necessary configurations (such as GPT .env path, vectorDB file paths, other file paths)? Enter Y or N: ")
+user_input = input("Bạn đã cập nhật tệp config.yaml với tất cả các cấu hình cần thiết (chẳng hạn như đường dẫn GPT .env, đường dẫn tệp vectorDB, các đường dẫn tệp khác) chưa? Nhập Y hoặc N: ")
 print("")
 if user_input == "Y":
-    print("Checking disease vectorDB ...")
+    print("Đang kiểm tra vectorDB bệnh ...")
     try:
         if os.path.exists(config_data["VECTOR_DB_PATH"]):
-            print("vectorDB already exists!")
+            print("vectorDB đã tồn tại!")
         else:
-            print("Creating vectorDB ...")
+            print("Đang tạo vectorDB ...")
             from kg_rag.vectorDB.create_vectordb import create_vectordb
             create_vectordb()
     except:
-        print("Double check the path that was given in VECTOR_DB_PATH of config.yaml file.")
+        print("Hãy kiểm tra lại đường dẫn đã được cung cấp trong VECTOR_DB_PATH của tệp config.yaml.")
 
     print("")
-    user_input_1 = input("Do you want to install Llama model? Enter Y or N: ")
+    user_input_1 = input("Bạn có muốn cài đặt mô hình Llama không? Nhập Y hoặc N: ")
     if user_input_1 == "Y":
-        user_input_2 = input("Did you update the config.yaml file with proper configuration for downloading Llama model? Enter Y or N: ")
+        user_input_2 = input("Bạn đã cập nhật tệp config.yaml với cấu hình phù hợp để tải xuống mô hình Llama chưa? Nhập Y hoặc N: ")
         if user_input_2 == "Y":
-            user_input_3 = input("Are you using official Llama model from Meta? Enter Y or N: ")
+            user_input_3 = input("Bạn có đang sử dụng mô hình Llama chính thức từ Meta không? Nhập Y hoặc N: ")
             if user_input_3 == "Y":
-                user_input_4 = input("Did you get access to use the model? Enter Y or N: ")
+                user_input_4 = input("Bạn đã có quyền truy cập để sử dụng mô hình chưa? Nhập Y hoặc N: ")
                 if user_input_4 == "Y":
                     download_llama()
-                    print("Congratulations! Setup is completed.")
+                    print("Chúc mừng! Quá trình thiết lập đã hoàn tất.")
                 else:
-                    print("Aborting!")
+                    print("Hủy bỏ!")
             else:
                 download_llama(method='method-1')
-                user_input_5 = input("Did you get a message like 'Model is not downloaded!'?  Enter Y or N: ")
+                user_input_5 = input("Bạn có nhận được thông báo như 'Model không được tải xuống!' không? Nhập Y hoặc N: ")
                 if user_input_5 == "N":                
-                    print("Congratulations! Setup is completed.")
+                    print("Chúc mừng! Quá trình thiết lập đã hoàn tất.")
                 else:
                     download_llama(method='method-2')
-                    user_input_6 = input("Did you get a message like 'Model is not downloaded!'?  Enter Y or N: ")
+                    user_input_6 = input("Bạn có nhận được thông báo như 'Model không được tải xuống!' không? Nhập Y hoặc N: ")
                     if user_input_6 == "N":                        
                         print("""
-                        IMPORTANT : 
-                        Llama model was downloaded using 'LlamaTokenizer' instead of 'AutoTokenizer' method. 
-                        So, when you run text generation script, please provide an extra command line argument '-m method-2'.
-                        For example:
+                        QUAN TRỌNG : 
+                        Mô hình Llama đã được tải xuống bằng phương pháp 'LlamaTokenizer' thay vì 'AutoTokenizer'. 
+                        Vì vậy, khi bạn chạy script tạo văn bản, vui lòng cung cấp thêm đối số dòng lệnh '-m method-2'.
+                        Ví dụ:
                             python -m kg_rag.rag_based_generation.Llama.text_generation -m method-2
                         """)
-                        print("Congratulations! Setup is completed.")
+                        print("Chúc mừng! Quá trình thiết lập đã hoàn tất.")
                     else:
-                        print("We have now tried two methods to download Llama. If they both do not work, then please check the Llama configuration requirement in the huggingface model card page. Aborting!")
+                        print("Chúng tôi đã thử hai phương pháp để tải xuống Llama. Nếu cả hai đều không hoạt động, vui lòng kiểm tra yêu cầu cấu hình Llama trên trang thẻ mô hình của huggingface. Hủy bỏ!")
         else:
-            print("Aborting!")
+            print("Hủy bỏ!")
     else:
-        print("No problem. Llama will get installed on-the-fly when you run the model for the first time.")
-        print("Congratulations! Setup is completed.")
+        print("Không sao. Llama sẽ được cài đặt tự động khi bạn chạy mô hình lần đầu tiên.")
+        print("Chúc mừng! Quá trình thiết lập đã hoàn tất.")
 else:
-    print("As the first step, update config.yaml file and then run this python script again.")
-
-        
-            
-    
+    print("Bước đầu tiên, hãy cập nhật tệp config.yaml và sau đó chạy lại script python này.")
