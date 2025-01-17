@@ -3,7 +3,7 @@
 </p>
 
 ## Mục lục
-[KG-RAG là gì](https://github.com/BaranziniLab/KG_RAG#what-is-kg-rag)  
+[KG-RAG là gì](https://github.com/PineappleCuteCute/KG_RAG#what-is-kg-rag)  
 [Ví dụ về cách sử dụng KG-RAG](https://github.com/BaranziniLab/KG_RAG#example-use-case-of-kg-rag)  
  - [Gợi ý GPT mà không sử dụng KG-RAG](https://github.com/BaranziniLab/KG_RAG#without-kg-rag)  
  - [Gợi ý GPT với KG-RAG](https://github.com/BaranziniLab/KG_RAG#with-kg-rag)  
